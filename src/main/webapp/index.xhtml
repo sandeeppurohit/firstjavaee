@@ -21,28 +21,7 @@
     </h:head>
     <h:body>
         <div class="container">
-            <h4>Travis Ci with Sonar example!</h4>
+            <h4>This is our first javaEE application</h4>
         </div>
-        <h:form>
-            <div class="row">
-                <p:feedReader value="https://www.youtube.com/feeds/videos.xml?channel_id=UCmTo3RyFzlcox7lx0CVl3ww"
-                    var="feed">
-                    <div class="col s12 m3 l4">
-                        <div class="card">
-                            <div class="card-image">
-                                <a href="#{feed.link}" target="_blank">
-                                    <img src="#{feedBean.imageOf(feed.link)}" />
-                                </a>
-                            </div>
-                            <div class="card-action">
-                                <a href="#{feed.link}" target="_blank" class="truncate blue-text">
-                                    #{feed.title}
-                                </a>
-                            </div>
-                        </div>
-                    </div>      
-                </p:feedReader>
-            </div>
-        </h:form>
     </h:body>
 </html>
